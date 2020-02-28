@@ -1,0 +1,32 @@
+section{
+    height: 100vh;
+}
+
+/* ---------- section introduction ----------*/
+#intro {
+    background: url('images/Clip.png');
+    background-size: cover;
+}
+
+/* ---------- section about Me ---------- */
+#aboutMe{
+    background: #0081FF;
+}
+
+/* ---------- section portfolio ---------- */
+
+
+/* ---------- section client ---------- */
+#clients{
+    background: url('images/photo-4.png');
+    background-size: cover;
+}
+
+/* ---------- section blog ---------- */
+
+
+/* ---------- section contacts ---------- */
+#contacts{
+    background: url('images/photo.png');
+    background-size: cover;
+}
