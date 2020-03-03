@@ -23,9 +23,8 @@
     <!------------ section introduction ------------>
     <section id="intro" class=" p-0 container-fluid text-white">
         <div class="bg-intro w-100 h-100">
-            <div class="container h-100">
-
-                <header class="d-flex flex-row py-5 justify-content-between">
+            <header class="container-fluid">
+                <div class="d-flex container flex-row py-5 justify-content-between">
                     <a href="index.html">
                         <div class="d-flex flex-row titreAlbedo">
                             <!-- titre et logo -->
@@ -49,17 +48,22 @@
                         <!-- acheter template-->
                         <a href="#" class="btn-buy font-weight-bold">BUY IT NOW</a>
                     </div>
-                </header>
+                </div>
+            </header>
 
-                <div class="d-flex flex-column h-85 justify-content-center col-6">
+            <div class="container">
+
+
+                <div class="d-flex absolute-center flex-column w-50">
                     <h2>Hi there!</h2>
                     <p class="sous-titre st1 no-wrap">My name is <span class="span-blue">Daniel</span></p>
 
                     <p class="montserrat font-weight-lighter t40">I'm graphic Designer</p>
 
-                    <p class="cambay text-white-50 t24">Claritas est etiam processus dynamicus, qui sequitur mutationem
-                    consuetudium
-                    lectorum parum, anteposuerit etiam processus dynamicus. </p>
+                    <p class="cambay text-white-50 t24 wrap w-75">Claritas est etiam processus dynamicus, qui sequitur
+                        mutationem
+                        consuetudium
+                        lectorum parum, anteposuerit etiam processus dynamicus. </p>
 
                     <div>
                         <button type="button" class="btn btn-intro rounded-pill"> <a class="text-bold t14 montserrat"
@@ -73,17 +77,18 @@
     </section>
 
     <!------------ section about Me ------------>
-    <section id="aboutMe" class="container-fluid text-white">
+    <section id="aboutMe" class="container-fluid text-white px-0 d-flex flex-column justify-content-around">
 
         <div class="container">
             <h2>About me...</h2>
             <div class="d-flex flex-row">
 
-                <p class="sous-titre col-6 p-5">Investigationes demonstraverunt lectores legere me lius quod ii legunt
+                <p class="sous-titre col-6 p-not-l">Investigationes demonstraverunt lectores legere me lius quod ii
+                    legunt
                     saepius.
                 </p>
 
-                <div class="t20 cambay col-6">
+                <div class="t20 cambay col-6 p-not-r">
                     <p>Qestigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
                         Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum est notare
                         quam littera gothica, quam nunc putamus est notare quam littera gothica, quam nunc putamus parum
@@ -94,12 +99,12 @@
             </div>
         </div> <!-- about Me -->
 
-        <div class="container-fluid bdx-services">
+        <div class="container-fluid bdx-services py-5">
             <!-- Services -->
             <div class="container d-flex flex-row justify-content-between">
 
-                <div class="col-4 d-flex flew-row p-5">
-                    <img src="images/icon.png" alt="icon-services" width="60" heigh="60" class="icon-service">
+                <div class="col-4 d-flex flew-row p-not-l">
+                    <img src="images/icon.png" alt="icon-services" width="60" heigh="60" class="icon-service mr-5">
                     <div>
                         <p class="montserrat text-bold t24">Web Design
                             & User Interface</p>
@@ -109,8 +114,8 @@
                     </div>
                 </div>
 
-                <div class="col-4 d-flex flew-row p-5">
-                    <img src="images/icon-1.png" alt="icon-services" width="60" heigh="60" class="icon-service">
+                <div class="col-4 d-flex flew-row p-5 ">
+                    <img src="images/icon-1.png" alt="icon-services" width="60" heigh="60" class="icon-service mr-5">
                     <div>
                         <p class="montserrat text-bold t24">Brand Identity</p>
                         <p class="cambay t18">Claritas est etiam processus dynamicus, qui sequitur mutationem
@@ -119,8 +124,8 @@
                     </div>
                 </div>
 
-                <div class="col-4 d-flex flew-row p-5">
-                    <img src="images/icon-2.png" alt="icon-services" width="60" heigh="60" class="icon-service">
+                <div class="col-4 d-flex flew-row p-not-r">
+                    <img src="images/icon-2.png" alt="icon-services" width="60" heigh="60" class="icon-service mr-5">
                     <div>
                         <p class="montserrat text-bold t24">HTML Templates
                             & WordPress Themes</p>
@@ -132,7 +137,7 @@
             </div>
         </div>
 
-        <div class="container reseaux-sociaux d-flex flex-row cambay t20">
+        <div class="container reseaux-sociaux d-flex flex-row cambay mx-auto my-5 t20">
             <!-- lien vers reseaux sociaux-->
             <p class="mr-5">If you like my works Follow me:</p>
             <div class="d-flex flex-row ml-5">
@@ -154,10 +159,10 @@
     <!------------ section portfolio ------------>
     <section id="portfolio">
 
-        <div class="container-fluid">
-            <div class="container">
-                <h2 class="text-black-50">Portfolio...</h2>
-                <div class="d-flex flex-row justify-content-between">
+        <div class="container-fluid py-5">
+            <div class="container py-5">
+                <h2 class="text-black-50 mt-5">Portfolio...</h2>
+                <div class="d-flex flex-row justify-content-between py-5">
                     <p class="sous-titre">I Make Beautiful Things!</p>
                     <button type="button"
                         class="btn btn-default btn-rounded montserrat text-bold t14 text-uppercase">View
@@ -198,107 +203,115 @@
     </section>
 
     <!------------ section client ------------>
-    <section id="clients" class="container-fluid">
-        <div class="container">
-            <h2>Clients...</h2>
-            <p class="sous-titre">What Customers Say:</p>
+    <section id="clients" class="container-fluid py-0">
+        <div class="bg-intro w-100 h-100 py-5">
+            <div class="container my-5 py-5">
+                <h2 class="mt-5 py-5">Clients...</h2>
+                <p class="sous-titre">What Customers Say:</p>
 
-            <!-- carousel avis client -->
-            <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+                <!-- carousel avis client -->
+                <div id="carousel-example-2" class="carousel slide carousel-fade py-5 my-5" data-ride="carousel">
 
-                <!--Slides-->
-                <div class="carousel-inner" role="listbox">
-                    <div class="carousel-item active">
-                        <div class="view">
-                            <p class="coustard t24">Investigationes demonstraverunt lectores legere me lius quod ii <br>
-                                legunt saepius nunc putamus parum claram.</p>
+                    <!--Slides-->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <div class="view">
+                                <p class="coustard t24">Investigationes demonstraverunt lectores legere me lius quod ii
+                                    <br>
+                                    legunt saepius nunc putamus parum claram.</p>
 
-                            <div class="d-flex justify-content-center">
-                                <img src="images/photo-5.png" alt="photo-client" class="rounded-circle">
-                                <div>
-                                    <p class="montserrat t18 text-warning text-bold t18">Christina Smith</p>
-                                    <p class="cambay t16 text-white-50">Marketing Envato Pty Ltd.</p>
+                                <div class="d-flex justify-content-center my-5">
+                                    <img src="images/photo-5.png" alt="photo-client" class="rounded-circle mr-3">
+                                    <div class="py-3">
+                                        <p class="montserrat t18 text-warning text-bold t18">Christina Smith</p>
+                                        <p class="cambay t16 text-white-50">Marketing Envato Pty Ltd.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="carousel-item">
-                        <!--Mask color-->
-                        <div class="view">
-                            <p class="coustard t24">Investigationes demonstraverunt lectores legere me lius quod ii <br>
-                                legunt saepius nunc putamus parum claram.</p>
+                        <div class="carousel-item">
+                            <!--Mask color-->
+                            <div class="view">
+                                <p class="coustard t24">Investigationes demonstraverunt lectores legere me lius quod ii
+                                    <br>
+                                    legunt saepius nunc putamus parum claram.</p>
 
-                            <div class="d-flex justify-content-center">
-                                <img src="images/photo-5.png" alt="photo-client" class="rounded-circle">
-                                <div>
-                                    <p class="montserrat t18 text-warning text-bold t18">Christina Smith</p>
-                                    <p class="cambay t16 text-white-50">Marketing Envato Pty Ltd.</p>
+                                <div class="d-flex justify-content-center my-5">
+                                    <img src="images/photo-5.png" alt="photo-client" class="rounded-circle mr-3">
+                                    <div class="py-3">
+                                        <p class="montserrat t18 text-warning text-bold t18">Christina Smith</p>
+                                        <p class="cambay t16 text-white-50">Marketing Envato Pty Ltd.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="carousel-item">
-                        <!--Mask color-->
-                        <div class="view">
-                            <p class="coustard t24">Investigationes demonstraverunt lectores legere me lius quod ii <br>
-                                legunt saepius nunc putamus parum claram.</p>
+                        <div class="carousel-item">
+                            <!--Mask color-->
+                            <div class="view">
+                                <p class="coustard t24">Investigationes demonstraverunt lectores legere me lius quod ii
+                                    <br>
+                                    legunt saepius nunc putamus parum claram.</p>
 
-                            <div class="d-flex  justify-content-center">
-                                <img src="images/photo-5.png" alt="photo-client" class="rounded-circle">
-                                <div>
-                                    <p class="montserrat t18 text-warning text-bold t18">Christina Smith</p>
-                                    <p class="cambay t16 text-white-50">Marketing Envato Pty Ltd.</p>
+                                <div class="d-flex justify-content-center my-5">
+                                    <img src="images/photo-5.png" alt="photo-client" class="rounded-circle mr-3">
+                                    <div class="py-3">
+                                        <p class="montserrat t18 text-warning text-bold t18">Christina Smith</p>
+                                        <p class="cambay t16 text-white-50">Marketing Envato Pty Ltd.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <!--/.Slides-->
+                        <!--Controls-->
+                        <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                        <!--/.Controls-->
                     </div>
+
+                    <div class="row justify-content-between my-5 py-5">
+                        <img src="images/01.png" alt="logo-client-satisfait" width="200" height="121">
+                        <img src="images/02.png" alt="logo-client-satisfait" width="200" height="200">
+                        <img src="images/03.png" alt="logo-client-satisfait" width="200" height="123">
+                        <img src="images/04.png" alt="logo-client-satisfait" width="200" height="157">
+                    </div> <!-- 4 logo de clients-->
                 </div>
-                <!--/.Slides-->
-                <!--Controls-->
-                <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-                <!--/.Controls-->
             </div>
-
-            <div class="row justify-content-between my-5 py-5">
-                <img src="images/01.png" alt="logo-client-satisfait" width="200" height="121">
-                <img src="images/02.png" alt="logo-client-satisfait" width="200" height="200">
-                <img src="images/03.png" alt="logo-client-satisfait" width="200" height="123">
-                <img src="images/04.png" alt="logo-client-satisfait" width="200" height="157">
-            </div> <!-- 4 logo de clients-->
-        </div>
     </section>
 
     <!------------ section blog ------------>
     <section id="blog" class="container-fluid">
-        <div class="container">
-            <h2 class="text-black-50">Blog...</h2> <!-- blog -->
-            <div class="row p-0 m-0">
-                <div class="col-6 p-0 m-0">
-                    <div>
+        <div class="container py-5">
+            <h2 class=" pl-3 text-black-50">Blog...</h2> <!-- blog -->
+            <div class="p-0 m-0 d-flex">
+                <div class="col-6 p-3">
+                    <div class="px-0 py-5 mb-5">
                         <p class="sous-titre">Do Not Miss the Userful Articles</p>
                         <p class="cambay t24 text-black-50">Mirum est notare quam littera gothica, quam nunc parum
                             claram...</p>
                     </div>
+
 
                     <div class="bg-primary text-center col-12 p-5 z-depth-2">
                         <p class="montserrat t16 extra-bold text-white">6 october</p>
                         <p class="coustard t26 text-white">“Eodem modo typi, qui nunc nobis videntur parum clari,
                             sollemnes parum”</p>
                         <p class="cambay text-bold t18 text-warning">Johnathan Miller</p>
+
                     </div>
                 </div>
-                <div class="col-6 carousel-blog m-0 p-0 z-depth-2">
+                <div class="col-6 carousel-blog p-3">
 
 
                     <!--Carousel Wrapper-->
-                    <div id="carousel-example-1z" class="carousel slide carousel-fade w-100 h-100" data-ride="carousel">
+                    <div id="carousel-example-1z"
+                        class="carousel slide carousel-fade z-depth-2 w-100 bg-carousel-blog h-100"
+                        data-ride="carousel">
                         <!--Indicators-->
                         <ol class="carousel-indicators">
                             <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
@@ -354,7 +367,7 @@
                 </div>
             </div>
 
-            <div class="row w-100 justify-content-between p-0 m-0">
+            <div class="row w-100 p-3 justify-content-between m-0">
                 <div class="blog-bg-1 blog-bg z-depth-2"></div>
                 <div class="blog-bg-2 blog-bg z-depth-2"></div>
                 <div class="blog-bg-3 blog-bg d-flex flex-column justify-content-around p-5 z-depth-2">
@@ -371,72 +384,76 @@
     </section>
 
     <!------------ section contact ------------>
-    <section id="contacts" class="container-fluid p-0">
-        <div class="container">
-            <h2 class="text-white">Contacts...</h2>
-            <div class="row">
-                <div class="col-6">
-                    <!-- contact information -->
-                    <p class="sous-titre text-white">Contact Information</p>
-                    <div class="text-white-50 cambay t20">
-                        <p>You can find me here: <br>
-                            <span class="text-white">795 South Park Avenue, Melbourne, Australia </span></p>
+    <section id="contacts" class="container-fluid p-0 position-relative">
+        <div class="bg-intro">
+            <div class="container absolute-center-50">
+                <h2 class="text-white mb-5">Contacts...</h2>
+                <div class="row">
+                    <div class="col-6">
+                        <!-- contact information -->
+                        <p class="sous-titre text-white">Contact Information</p>
+                        <div class="text-white-50 cambay t20">
+                            <p>You can find me here: <br>
+                                <span class="text-white">795 South Park Avenue, Melbourne, Australia </span></p>
 
-                        <p>Phone: <span class="text-white">8 800 567.890.11</span> </p>
+                            <p>Phone: <span class="text-white">8 800 567.890.11</span> </p>
 
-                        <p>Monday 1 Friday from: <span class="text-white">9.00 am to 8.00 pm EST</span> <br>
-                            Saturday from <span class="text-white">10.00 am to pm EST</span></p>
+                            <p>Monday 1 Friday from: <span class="text-white">9.00 am to 8.00 pm EST</span> <br>
+                                Saturday from <span class="text-white">10.00 am to pm EST</span></p>
 
-                        <p class="text-primary">
-                            <a class="text-primary" href="mailto:#">hello@albedo.com</a> <br>
-                            <a class="text-primary" href="mailto:#">support@albedo.com</a>
-                        </p>
+                            <p class="text-primary">
+                                <a class="text-primary" href="mailto:#">hello@albedo.com</a> <br>
+                                <a class="text-primary" href="mailto:#">support@albedo.com</a>
+                            </p>
 
-                        <p class="reseaux-sociaux">
-                            <i class="fab mx-4 fa-facebook-f"></i>
-                            <i class="fab mx-4 fa-twitter"></i>
-                            <i class="fab mx-4 fa-google-plus-g"></i>
-                            <i class="fab mx-4 fa-linkedin-in"></i>
+                            <p class="reseaux-sociaux">
+                                <i class="fab mx-4 fa-facebook-f"></i>
+                                <i class="fab mx-4 fa-twitter"></i>
+                                <i class="fab mx-4 fa-google-plus-g"></i>
+                                <i class="fab mx-4 fa-linkedin-in"></i>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <p class="sous-titre text-white">Get In touch</p>
+                        <p class="text-white-50 cambay t20"> You can contact with me using this from.</p>
+
+                        <form class="w-100" action="#" method="POST">
+                            <div class="row justify-content-between m-0 w-100">
+                                <div class="w-45 p-0">
+                                    <input class="rounded-pill elegant-color text-white-50 my-4 w-100" type="text">
+                                </div>
+                                <div class="w-45 p-0">
+                                    <input class="rounded-pill elegant-color text-white-50 my-4 w-100" type="mail">
+                                </div>
+                            </div>
+                            <textarea class="col-12 elegant-color text-white-50 my-4" name="" id=""
+                                rows="7"></textarea><br>
+                            <button
+                                class="btn btn-send t14  montserrat btn-primary rounded-pill text-bold">SEND</button>
+                        </form>
+
+                    </div> <!-- get it touch -->
+                </div>
+            </div>
+
+            <footer class="container-fluid bg-footer absolute-end p-5">
+                <div class="container d-flex flex-row justify-content-between">
+                    <div>
+                        <!-- copyright-->
+                        <p class="cambay text-bold t14 m-0 text-white-50">
+                            © 2016 <span class="text-white">Albedo</span> — Universal WordPress Theme. Developed by
+                            <span class="text-white">WPlab.Pro.</span> Design by themefire.
                         </p>
                     </div>
+                    <div>
+                        <!-- back to top -->
+                        <a href="#intro">Back to top <i class="far fa-arrow-alt-circle-up"></i></a>
+                    </div>
                 </div>
-
-                <div class="col-6">
-                    <p class="sous-titre text-white">Get In touch</p>
-                    <p class="text-white-50 cambay t20"> You can contact with me using this from.</p>
-
-                    <form class="w-100" action="#" method="POST">
-                        <div class="row justify-content-between m-0 w-100">
-                            <div class="w-45 p-0">
-                                <input class="rounded-pill elegant-color text-white-50 my-4 w-100" type="text">
-                            </div>
-                            <div class="w-45 p-0">
-                                <input class="rounded-pill elegant-color text-white-50 my-4 w-100" type="mail">
-                            </div>
-                        </div>
-                        <textarea class="col-12 elegant-color text-white-50 my-4" name="" id="" rows="7"></textarea><br>
-                        <button class="btn btn-send t14  montserrat btn-primary rounded-pill text-bold">SEND</button>
-                    </form>
-
-                </div> <!-- get it touch -->
-            </div>
+            </footer>
         </div>
-
-        <footer class="container-fluid bg-footer p-5">
-            <div class="container d-flex flex-row justify-content-between">
-                <div>
-                    <!-- copyright-->
-                    <p class="cambay text-bold t14 m-0 text-white-50">
-                        © 2016 <span class="text-white">Albedo</span> — Universal WordPress Theme. Developed by <span
-                            class="text-white">WPlab.Pro.</span> Design by themefire.
-                    </p>
-                </div>
-                <div>
-                    <!-- back to top -->
-                    <a href="#intro">Back to top <i class="far fa-arrow-alt-circle-up"></i></a>
-                </div>
-            </div>
-        </footer>
     </section>
 
 

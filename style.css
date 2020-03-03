@@ -8,8 +8,8 @@ h2{
     font-size: 3.6rem;
 }
 
-section{
-    height: 100vh;
+section:not(#portfolio){
+    min-height: 100vh;
     padding: 6rem 0;
 }
 
@@ -38,6 +38,25 @@ a:hover{
     font-weight: 800;
 }
 
+.absolute-center{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-40%);
+}
+
+.absolute-center-50{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.absolute-end{
+    position: absolute;
+    top: 100%;
+    transform: translateY(-100%);
+}
+
 .span-blue{
     color: #0081FF;
 }
@@ -56,6 +75,10 @@ a:hover{
 
 .no-wrap{
     white-space: nowrap;
+}
+
+.wrap{
+    white-space: normal;
 }
 
 .t40{
@@ -101,6 +124,14 @@ a:hover{
 .h-85{
     height: 80%;
 }
+
+.p-not-l{
+    padding: 3rem 3rem 3rem 0;
+}
+
+.p-not-r{
+    padding: 3rem 0rem 3rem 3rem;
+}
 /* ---------- section introduction ----------*/
 #intro {
     background: url('images/Clip.png');
@@ -108,7 +139,8 @@ a:hover{
 }
 
 .bg-intro{
-    background-color: #2b2b2b8f;
+    background-color: #2b2b2b9a;
+    min-height: 100vh;
 }
 
 header {
@@ -130,7 +162,6 @@ nav ul li{
     font-family: 'work Sans', sans-serif;
     font-size: 1.8rem;
     padding: 1.4rem 2.0rem;
-    margin-top: 1rem;
 }
 
 .btn-buy{
@@ -139,6 +170,7 @@ nav ul li{
     border: 2px #ffff00 solid;
     border-radius:3rem/3rem;
     font-family: 'montserrat', sans-serif;
+    margin-top: 5rem;
 }
 
 .btn-intro{
@@ -169,6 +201,10 @@ nav ul li{
 }
 
 /* ---------- section portfolio ---------- */
+#portfolio{
+    min-height: 100vh;
+}
+
 .btn-default{
     border-radius: 3rem/3rem;
     padding: 2rem 5.5rem;
@@ -205,11 +241,15 @@ nav ul li{
     background: #f3f0f1;
 }
 
-.carousel-blog{
+.bg-carousel-blog{
     background-image: url('images/bgcarousel.png');
+    background-size: cover;
+}
+
+.carousel-blog{
     width: 56.1rem;
     height: 56.1rem;
-    background-size: cover;
+
 }
 .pad-carousel{
     padding: 15rem 10rem;
