@@ -1,11 +1,149 @@
-section{
-    height: 100vh;
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
+h2{
+    font-family: 'Leckerli One', sans-serif ;
+    font-size: 3.6rem;
+}
+
+section{
+    height: 100vh;
+    padding: 6rem 0;
+}
+
+/* ---------- décoration et tailles ---------- */
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    text-decoration: none;
+    color: white;
+    opacity: 50%;
+}
+
+.sous-titre:not(.st1){
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.st1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 6rem;
+    font-weight: 800;
+}
+
+.span-blue{
+    color: #0081FF;
+}
+
+.montserrat{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.coustard{
+    font-family: 'Coustard', sans-serif;
+}
+
+.cambay{
+    font-family: 'Cambay', sans-serif ;
+}
+
+.no-wrap{
+    white-space: nowrap;
+}
+
+.t40{
+    font-size: 4rem;
+}
+
+.t32{
+    font-size: 3.2rem;
+}
+
+.t26{
+    font-size: 2.6rem;
+}
+
+.t24{
+    font-size: 2.4rem;
+}
+
+.t20{
+    font-size: 2rem;
+}
+
+.T18{
+    font-size: 1.8rem;
+}
+
+.t16{
+    font-style: 1.6rem;
+}
+
+.t14{
+    font-size: 1.4rem;
+}
+
+.extra-bold{
+    font-weight: 800;
+}
+
+.w-45{
+    width: 45% !important;
+}
+
+.h-85{
+    height: 80%;
+}
 /* ---------- section introduction ----------*/
 #intro {
     background: url('images/Clip.png');
     background-size: cover;
+}
+
+.bg-intro{
+    background-color: #2b2b2b8f;
+}
+
+header {
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 3.6rem;
+}
+
+.logoAlbedo{
+    width: 4.6rem;
+    height: 5.5rem;
+}
+
+nav ul li{
+    font-family: 'work Sans', sans-serif;
+    font-size: 1.8rem;
+    padding: 1.4rem 2.0rem;
+    margin-top: 1rem;
+}
+
+.btn-buy{
+    padding: 1.2rem 3.3rem;
+    color: #ffff00;
+    border: 2px #ffff00 solid;
+    border-radius:3rem/3rem;
+    font-family: 'montserrat', sans-serif;
+}
+
+.btn-intro{
+    background: #2b2b2b;
+    padding: 2rem 4rem;
 }
 
 /* ---------- section about Me ---------- */
@@ -13,20 +151,128 @@ section{
     background: #0081FF;
 }
 
-/* ---------- section portfolio ---------- */
+.bdx-services{
+    background-color: #007af2;
+}
 
+.icon-service{
+    width: 6rem;
+    height: 6rem;
+}
+
+#aboutMe .reseaux-sociaux i{
+    opacity: 50%;
+}
+
+#aboutMe .reseaux-sociaux i:hover{
+    opacity: 100%;
+}
+
+/* ---------- section portfolio ---------- */
+.btn-default{
+    border-radius: 3rem/3rem;
+    padding: 2rem 5.5rem;
+}
+
+.masonry, .masonry div, .masonry img{
+    padding: 0;
+    margin: 0;
+}
+
+.masonry img{
+    width: 100%;
+    height: auto;
+}
 
 /* ---------- section client ---------- */
 #clients{
     background: url('images/photo-4.png');
     background-size: cover;
+    color: white;
+}
+
+#clients *{
+    text-align: center;
+}
+
+.rounded-circle{
+    width: 6rem;
+    height: 6rem;
 }
 
 /* ---------- section blog ---------- */
+#blog{
+    background: #f3f0f1;
+}
 
+.carousel-blog{
+    background-image: url('images/bgcarousel.png');
+    width: 56.1rem;
+    height: 56.1rem;
+    background-size: cover;
+}
+.pad-carousel{
+    padding: 15rem 10rem;
+}
 
+.blog-bg{
+    height: 26rem;
+}
+
+.blog-bg-1{
+    width: 26rem;
+    background-image: url('images/stand.png');
+    background-size: cover;
+}
+
+.blog-bg-2{
+    width: 26rem;
+    background-image: url('images/videoblog.png');
+    background-size: cover;
+}
+
+.blog-bg-3{
+    background: white;
+    width: 36rem;
+}
+
+.blog-bg-4{
+    background: #e91d62 ;
+    width: 16rem;
+}
 /* ---------- section contacts ---------- */
 #contacts{
     background: url('images/photo.png');
     background-size: cover;
+}
+
+#contacts .reseaux-sociaux i{
+    color: white;
+    opacity: 50%;
+}
+
+#contacts .reseaux-sociaux i:hover{
+    color: white;
+    opacity: 100%;
+}
+
+#contacts input, #contacts textarea{
+    border : 2px solid #353535;
+    resize: none;
+}
+
+#contacts input{
+    padding: 2rem 3.5rem;
+}
+
+#contacts textarea{
+    border-radius: 3rem/3rem;
+}
+
+#contacts .btn-send{
+    padding: 2rem 6rem;
+}
+
+.bg-footer{
+    background: #2121218e;
 }
