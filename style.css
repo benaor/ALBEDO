@@ -1,5 +1,5 @@
 html{
-    font-size: 62.5%;
+    font-size: 50%;
     scroll-behavior: smooth;
 }
 
@@ -36,6 +36,13 @@ a:hover{
     font-family: 'Montserrat', sans-serif;
     font-size: 6rem;
     font-weight: 800;
+}
+
+.center-absolute{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .absolute-center{
@@ -132,6 +139,16 @@ a:hover{
 .p-not-r{
     padding: 3rem 0rem 3rem 3rem;
 }
+/* ---------- section menu burger ----------*/
+
+#menu-burger{
+    z-index: 100;
+    text-align: center;
+    color: white;
+    height: 0vh;
+    overflow: hidden;
+}
+
 /* ---------- section introduction ----------*/
 #intro {
     background: url('images/Clip.png');
@@ -314,5 +331,19 @@ nav ul li{
 }
 
 .bg-footer{
-    background: #2121218e;
+    background: #212121a2;
 }
+
+
+/* tablette */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    
+}
+
+
+/* smartphone */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+}
+

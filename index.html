@@ -16,10 +16,56 @@
     <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.13.0/css/mdb.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.0/js/mdb.min.js"></script>
+
     <title>Albedo</title>
 </head>
 
+
+
 <body>
+    <!-- burger menu -->
+    <div class="w-100 position-fixed bg-dark" id="menu-burger">
+
+        <div class="d-flex container flex-row py-5 justify-content-between">
+            <a href="index.html">
+                <div class="d-flex flex-row">
+                    <!-- titre et logo -->
+                    <img src="images/logotype.png" alt="logoAlbedo" class="logoAlbedo mx-1" width="46" height="55">
+                    <h1 class="m-1">albedo</h1>
+                </div>
+            </a>
+
+            <div id="closeBurger">
+                <i class="fas fa-5x fa-times"></i>
+            </div>
+        </div>
+
+        <nav class="center-absolute">
+            <!-- menu nav -->
+            <ul class="list-unstyled">
+                <li class="montserrat t24 text-bold mt-5"><a href="#intro">Intro</a></li>
+                <li class="montserrat t24 text-bold mt-5"><a href="#aboutMe">About Me</a></li>
+                <li class="montserrat t24 text-bold mt-5"><a href="#portfolio">Portfolio</a></li>
+                <li class="montserrat t24 text-bold mt-5"><a href="#clients">Clients</a></li>
+                <li class="montserrat t24 text-bold mt-5"><a href="#blog">Blog</a></li>
+                <li class="montserrat t24 text-bold mt-5"><a href="#contacts">Contacts</a></li>
+                <!-- acheter template-->
+                <li class="mt-5"><a href="#" class="btn-buy font-weight-bold">BUY IT NOW</a></li>
+            </ul>
+        </nav>
+    </div>
+
     <!------------ section introduction ------------>
     <section id="intro" class=" p-0 container-fluid text-white">
         <div class="bg-intro w-100 h-100">
@@ -35,7 +81,7 @@
                     </a>
                     <nav>
                         <!-- menu nav -->
-                        <ul class="d-flex flex-row list-unstyled">
+                        <ul class="d-sm-none d-md-none d-lg-flex d-xl-flex flex-row list-unstyled ">
                             <li><a href="#intro">Intro</a></li>
                             <li><a href="#aboutMe">About Me</a></li>
                             <li><a href="#portfolio">Portfolio</a></li>
@@ -44,10 +90,11 @@
                             <li><a href="#contacts">Contacts</a></li>
                         </ul>
                     </nav>
-                    <div>
-                        <!-- acheter template-->
+                    <div class="d-sm-none d-md-none d-lg-flex d-xl-flex">
+                        <!-- acheter template -->
                         <a href="#" class="btn-buy font-weight-bold">BUY IT NOW</a>
                     </div>
+                    <div class="d-lg-none d-xl-none" id="openBurger"><i class="fas fa-5x fa-bars"></i></div>
                 </div>
             </header>
 
@@ -60,7 +107,8 @@
 
                     <p class="montserrat font-weight-lighter t40">I'm graphic Designer</p>
 
-                    <p class="cambay text-white-50 t24 wrap w-75">Claritas est etiam processus dynamicus, qui sequitur
+                    <p class="cambay text-white-50 t24 wrap w-75">Claritas est etiam processus dynamicus, qui
+                        sequitur
                         mutationem
                         consuetudium
                         lectorum parum, anteposuerit etiam processus dynamicus. </p>
@@ -90,8 +138,10 @@
 
                 <div class="t20 cambay col-6 p-not-r">
                     <p>Qestigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
-                        Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum est notare
-                        quam littera gothica, quam nunc putamus est notare quam littera gothica, quam nunc putamus parum
+                        Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum est
+                        notare
+                        quam littera gothica, quam nunc putamus est notare quam littera gothica, quam nunc putamus
+                        parum
                         claram, anteposuerit litterarum formas humanitatis per seacula quarta.</p>
 
                     <p>Eodem modo typi, qui nunc nobis videntur parum.</p>
@@ -216,7 +266,8 @@
                     <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active">
                             <div class="view">
-                                <p class="coustard t24">Investigationes demonstraverunt lectores legere me lius quod ii
+                                <p class="coustard t24">Investigationes demonstraverunt lectores legere me lius quod
+                                    ii
                                     <br>
                                     legunt saepius nunc putamus parum claram.</p>
 
@@ -232,7 +283,8 @@
                         <div class="carousel-item">
                             <!--Mask color-->
                             <div class="view">
-                                <p class="coustard t24">Investigationes demonstraverunt lectores legere me lius quod ii
+                                <p class="coustard t24">Investigationes demonstraverunt lectores legere me lius quod
+                                    ii
                                     <br>
                                     legunt saepius nunc putamus parum claram.</p>
 
@@ -248,7 +300,8 @@
                         <div class="carousel-item">
                             <!--Mask color-->
                             <div class="view">
-                                <p class="coustard t24">Investigationes demonstraverunt lectores legere me lius quod ii
+                                <p class="coustard t24">Investigationes demonstraverunt lectores legere me lius quod
+                                    ii
                                     <br>
                                     legunt saepius nunc putamus parum claram.</p>
 
@@ -325,7 +378,8 @@
                             <div class="carousel-item h-100 active">
                                 <p class="text-white-50 montserrat t20 extra-bold my-4">9 October</p>
                                 <p class="montserrat text-white t32 extra-bold my-4">Gallery Post Format</p>
-                                <p class="text-white cambay t18 my-4">Investigationes demonstraverunt lectores legere me
+                                <p class="text-white cambay t18 my-4">Investigationes demonstraverunt lectores
+                                    legere me
                                     lius quod ii legunt saepius. Claritas est etiam processus dynamicus.
                                 </p>
                                 <button type="button"
@@ -337,7 +391,8 @@
                             <div class="carousel-item h-100">
                                 <p class="text-white-50 montserrat t20 extra-bold my-4">9 October</p>
                                 <p class="montserrat text-white t32 extra-bold my-4">Gallery Post Format</p>
-                                <p class="text-white cambay t18 my-4">Investigationes demonstraverunt lectores legere me
+                                <p class="text-white cambay t18 my-4">Investigationes demonstraverunt lectores
+                                    legere me
                                     lius quod ii legunt saepius. Claritas est etiam processus dynamicus.
                                 </p>
                                 <button type="button"
@@ -349,7 +404,8 @@
                             <div class="carousel-item h-100">
                                 <p class="text-white-50 montserrat t20 extra-bold my-4">9 October</p>
                                 <p class="montserrat text-white t32 extra-bold my-4">Gallery Post Format</p>
-                                <p class="text-white cambay t18 my-4">Investigationes demonstraverunt lectores legere me
+                                <p class="text-white cambay t18 my-4">Investigationes demonstraverunt lectores
+                                    legere me
                                     lius quod ii legunt saepius. Claritas est etiam processus dynamicus.
                                 </p>
                                 <button type="button"
@@ -439,7 +495,7 @@
             </div>
 
             <footer class="container-fluid bg-footer absolute-end p-5">
-                <div class="container d-flex flex-row justify-content-between">
+                <div class="container d-flex flex-row p-3 justify-content-between">
                     <div>
                         <!-- copyright-->
                         <p class="cambay text-bold t14 m-0 text-white-50">
@@ -456,18 +512,23 @@
         </div>
     </section>
 
+    <script>
 
-    <!-- JQuery -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.0/js/mdb.min.js"></script>
+        $(document).ready(function () {
+
+            $("#openBurger").click(function () {
+                $('#menu-burger').animate({ height: '100vh' }, 1000);
+            });
+
+            $("#closeBurger").click(function () {
+                $('#menu-burger').animate({ height: '0vh' }, 1000);
+            });
+
+
+        });
+
+    </script>
+
 
 </body>
 
