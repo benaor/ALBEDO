@@ -1,16 +1,11 @@
 html{
-    font-size: 50%;
+    font-size: 62.5%;
     scroll-behavior: smooth;
 }
 
 h2{
     font-family: 'Leckerli One', sans-serif ;
     font-size: 3.6rem;
-}
-
-section:not(#portfolio){
-    min-height: 100vh;
-    padding: 6rem 0;
 }
 
 /* ---------- décoration et tailles ---------- */
@@ -36,13 +31,6 @@ a:hover{
     font-family: 'Montserrat', sans-serif;
     font-size: 6rem;
     font-weight: 800;
-}
-
-.center-absolute{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .absolute-center{
@@ -84,6 +72,7 @@ a:hover{
     white-space: nowrap;
 }
 
+
 .wrap{
     white-space: normal;
 }
@@ -108,7 +97,7 @@ a:hover{
     font-size: 2rem;
 }
 
-.T18{
+.t18{
     font-size: 1.8rem;
 }
 
@@ -135,20 +124,6 @@ a:hover{
 .p-not-l{
     padding: 3rem 3rem 3rem 0;
 }
-
-.p-not-r{
-    padding: 3rem 0rem 3rem 3rem;
-}
-/* ---------- section menu burger ----------*/
-
-#menu-burger{
-    z-index: 100;
-    text-align: center;
-    color: white;
-    height: 0vh;
-    overflow: hidden;
-}
-
 /* ---------- section introduction ----------*/
 #intro {
     background: url('images/Clip.png');
@@ -158,6 +133,9 @@ a:hover{
 .bg-intro{
     background-color: #2b2b2b9a;
     min-height: 100vh;
+}
+.bg-intro-client{
+    background-color: #2b2b2b9a;
 }
 
 header {
@@ -187,7 +165,6 @@ nav ul li{
     border: 2px #ffff00 solid;
     border-radius:3rem/3rem;
     font-family: 'montserrat', sans-serif;
-    margin-top: 5rem;
 }
 
 .btn-intro{
@@ -218,9 +195,6 @@ nav ul li{
 }
 
 /* ---------- section portfolio ---------- */
-#portfolio{
-    min-height: 100vh;
-}
 
 .btn-default{
     border-radius: 3rem/3rem;
@@ -333,17 +307,124 @@ nav ul li{
 .bg-footer{
     background: #212121a2;
 }
+.p-footer-contact{
+    padding: 5rem !important;
+}
 
-
-/* tablette */
-@media (min-width: 768px) and (max-width: 991.98px) {
-
+.p-blog{
+    padding: 4rem 0;
+}
+.p-20{
+    padding: 2rem 0;
+}
+.sous-titre-1{
+    line-height: 5rem !important;
+    font-family: Montserrat, sans-serif;
+    font-size: 4rem;
+    font-weight: 800
+}
+.p-about-me{
+    padding-top: 6.5rem;
+    padding-bottom: 4rem;
+}
+.p-about{
+    padding: 3.5rem 0;
+}
+.p-about-reseaux{
+    padding: 7rem 0;
+}
+.p-contact{
+    padding-bottom: 2.5rem;
     
 }
-
-
-/* smartphone */
-@media (min-width: 576px) and (max-width: 767.98px) {
-
+.p-contact-mail{
+    padding-bottom: 3.5rem;
+}
+.m-contact{
+    margin-left: 2rem;
+}
+.margin-contact{
+    padding: 20rem 0 !important;
+}
+.p-footer{
+    padding: 3rem 0;
+}
+.center-absolute{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+    #menu-burger{
+        z-index: 100;
+        text-align: center;
+        color: white;
+        height: 0vh;
+        overflow: hidden;
+        }
+.t-john-miller{
+    font-size: 1.8rem !important;
 }
 
+.p-content-footer
+{
+    padding: 10rem 0;
+}
+        @media screen and (min-width: 992px){
+            .p-not-r{
+                padding: 3rem 0rem 3rem 3rem;
+            }
+            .w-input-contact{
+                width: 45%;
+            }
+            .w-text-area{
+                width: 100%;
+            }
+            .w-button{
+                width: 33.333%;
+            }
+        }
+
+        @media screen and (max-width: 992px){
+            .p-not{
+                padding: 0;
+            }
+            .blog-w {
+                width: 50% !important;
+            }
+            .w-input-contact{
+                width: 100%;
+            }
+            .w-text-area{
+                width: 100%;
+            }
+            .w-button{
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width: 576px){
+            html{
+                font-size: 40% !important;
+            }
+            .w-input-contact{
+                width: 100%;
+            }
+            .w-text-area{
+                width: 75%;
+            }
+            .w-button{
+                width: 75%;
+            }
+        }
+
+        @media screen and (max-width: 430px){
+            html{
+                font-size: 30% !important;
+            }
+        }
+        @media screen and (max-width: 350px){
+            html{
+                font-size: 25% !important;
+            }
+        }

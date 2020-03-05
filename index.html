@@ -31,11 +31,9 @@
     <title>Albedo</title>
 </head>
 
-
-
 <body>
-    <!-- burger menu -->
-    <div class="w-100 position-fixed bg-dark" id="menu-burger">
+
+    <div class="w-100 position-fixed px-5 bg-dark" id="menu-burger">
 
         <div class="d-flex container flex-row py-5 justify-content-between">
             <a href="index.html">
@@ -51,26 +49,26 @@
             </div>
         </div>
 
+
         <nav class="center-absolute">
             <!-- menu nav -->
             <ul class="list-unstyled">
-                <li class="montserrat t24 text-bold mt-5"><a href="#intro">Intro</a></li>
-                <li class="montserrat t24 text-bold mt-5"><a href="#aboutMe">About Me</a></li>
-                <li class="montserrat t24 text-bold mt-5"><a href="#portfolio">Portfolio</a></li>
-                <li class="montserrat t24 text-bold mt-5"><a href="#clients">Clients</a></li>
-                <li class="montserrat t24 text-bold mt-5"><a href="#blog">Blog</a></li>
-                <li class="montserrat t24 text-bold mt-5"><a href="#contacts">Contacts</a></li>
+                <li class="montserrat t24 text-bold mt-5"><a class="lien-burger" href="#intro">Intro</a></li>
+                <li class="montserrat t24 text-bold mt-5"><a class="lien-burger" href="#aboutMe">About Me</a></li>
+                <li class="montserrat t24 text-bold mt-5"><a class="lien-burger" href="#portfolio">Portfolio</a></li>
+                <li class="montserrat t24 text-bold mt-5"><a class="lien-burger" href="#clients">Clients</a></li>
+                <li class="montserrat t24 text-bold mt-5"><a class="lien-burger" href="#blog">Blog</a></li>
+                <li class="montserrat t24 text-bold mt-5"><a class="lien-burger" href="#contacts">Contacts</a></li>
                 <!-- acheter template-->
                 <li class="mt-5"><a href="#" class="btn-buy font-weight-bold">BUY IT NOW</a></li>
             </ul>
         </nav>
     </div>
-
     <!------------ section introduction ------------>
     <section id="intro" class=" p-0 container-fluid text-white">
         <div class="bg-intro w-100 h-100">
             <header class="container-fluid">
-                <div class="d-flex container flex-row py-5 justify-content-between">
+                <div class="d-flex container flex-row py-5 justify-content-between align-items-center">
                     <a href="index.html">
                         <div class="d-flex flex-row titreAlbedo">
                             <!-- titre et logo -->
@@ -79,9 +77,9 @@
                             <h1 class="m-1">albedo</h1>
                         </div>
                     </a>
-                    <nav>
+                    <nav class="d-none d-sm-none d-md-none d-lg-block d-xl-block">
                         <!-- menu nav -->
-                        <ul class="d-sm-none d-md-none d-lg-flex d-xl-flex flex-row list-unstyled ">
+                        <ul class="d-none d-sm-none d-md-none d-lg-flex d-xl-flex text-nowrap m-0 flex-row list-unstyled ">
                             <li><a href="#intro">Intro</a></li>
                             <li><a href="#aboutMe">About Me</a></li>
                             <li><a href="#portfolio">Portfolio</a></li>
@@ -90,9 +88,9 @@
                             <li><a href="#contacts">Contacts</a></li>
                         </ul>
                     </nav>
-                    <div class="d-sm-none d-md-none d-lg-flex d-xl-flex">
+                    <div class="d-none d-sm-none d-md-none d-lg-flex d-xl-flex">
                         <!-- acheter template -->
-                        <a href="#" class="btn-buy font-weight-bold">BUY IT NOW</a>
+                        <a href="#" class="btn-buy text-nowrap font-weight-bold">BUY IT NOW</a>
                     </div>
                     <div class="d-lg-none d-xl-none" id="openBurger"><i class="fas fa-5x fa-bars"></i></div>
                 </div>
@@ -107,8 +105,7 @@
 
                     <p class="montserrat font-weight-lighter t40">I'm graphic Designer</p>
 
-                    <p class="cambay text-white-50 t24 wrap w-75">Claritas est etiam processus dynamicus, qui
-                        sequitur
+                    <p class="cambay text-white-50 t24 wrap w-75">Claritas est etiam processus dynamicus, qui sequitur
                         mutationem
                         consuetudium
                         lectorum parum, anteposuerit etiam processus dynamicus. </p>
@@ -125,23 +122,23 @@
     </section>
 
     <!------------ section about Me ------------>
-    <section id="aboutMe" class="container-fluid text-white px-0 d-flex flex-column justify-content-around">
+    <section id="aboutMe" class="container-fluid text-white px-0 d-flex flex-column">
 
-        <div class="container">
+        <div class="container p-about-me">
             <h2>About me...</h2>
-            <div class="d-flex flex-row">
+            <div
+                class="d-flex flex-column flex-sm-column flex-md-column flex-lg-row flex-xl-row justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-start justify-content-xl-start">
 
-                <p class="sous-titre col-6 p-not-l">Investigationes demonstraverunt lectores legere me lius quod ii
+                <p class="sous-titre col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 p-not-l">Investigationes
+                    demonstraverunt lectores legere me lius quod ii
                     legunt
                     saepius.
                 </p>
 
-                <div class="t20 cambay col-6 p-not-r">
+                <div class="t20 cambay col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 p-not-r p-not">
                     <p>Qestigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
-                        Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum est
-                        notare
-                        quam littera gothica, quam nunc putamus est notare quam littera gothica, quam nunc putamus
-                        parum
+                        Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum est notare
+                        quam littera gothica, quam nunc putamus est notare quam littera gothica, quam nunc putamus parum
                         claram, anteposuerit litterarum formas humanitatis per seacula quarta.</p>
 
                     <p>Eodem modo typi, qui nunc nobis videntur parum.</p>
@@ -149,37 +146,59 @@
             </div>
         </div> <!-- about Me -->
 
-        <div class="container-fluid bdx-services py-5">
-            <!-- Services -->
-            <div class="container d-flex flex-row justify-content-between">
 
-                <div class="col-4 d-flex flew-row p-not-l">
-                    <img src="images/icon.png" alt="icon-services" width="60" heigh="60" class="icon-service mr-5">
-                    <div>
-                        <p class="montserrat text-bold t24">Web Design
+
+
+        <div class="container-fluid bdx-services">
+            <!-- Services -->
+            <div
+                class="container p-about d-flex flex-column flex-sm-column flex-md-column flex-lg-row flex-xl-row justify-content-between">
+
+                <div
+                    class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 d-flex flex-column flex-sm-column flex-md-column flex-lg-row flex-xl-row  p-not-l">
+                    <img src="images/icon.png" alt="icon-services" width="60" heigh="60"
+                        class="align-self-center align-self-sm-center align-self-md-center align-self-lg-start align-self-xl-start icon-service mb-3 mb-sm-3 mb-md-3 mb-lg-0 mb-xl-0 mr-0 mr-sm-0 mr-md-0 mr-lg-5 mr-xl-5">
+                    <div
+                        class="d-flex flex-column justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-start justify-content-xl-start align-items-center align-items-sm-center align-items-md-center align-items-lg-start align-items-xl-start">
+                        <p
+                            class="montserrat text-bold t24 text-center text-sm-center text-md-center text-lg-left text-xl-left">
+                            Web Design
                             & User Interface</p>
-                        <p class="cambay t18">Investigationes demonstraverunt lectores legere me eum iriure dolor in
+                        <p class="cambay t18 text-center text-sm-center text-md-center text-lg-left text-xl-left">
+                            Investigationes demonstraverunt lectores legere me eum iriure dolor in
                             hendrerit.</p>
 
                     </div>
                 </div>
 
-                <div class="col-4 d-flex flew-row p-5 ">
-                    <img src="images/icon-1.png" alt="icon-services" width="60" heigh="60" class="icon-service mr-5">
-                    <div>
-                        <p class="montserrat text-bold t24">Brand Identity</p>
-                        <p class="cambay t18">Claritas est etiam processus dynamicus, qui sequitur mutationem
+                <div
+                    class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 d-flex flex-column flex-sm-column flex-md-column flex-lg-row flex-xl-row  p-5 ">
+                    <img src="images/icon-1.png" alt="icon-services" width="60" heigh="60"
+                        class="align-self-center align-self-sm-center align-self-md-center align-self-lg-start align-self-xl-start icon-service mb-3 mb-sm-3 mb-md-3 mb-lg-0 mb-xl-0 mr-5">
+                    <div
+                        class="d-flex flex-column justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-start justify-content-xl-start align-items-center align-items-sm-center align-items-md-center align-items-xl-start align-items-xl-start">
+                        <p
+                            class="montserrat text-bold t24 text-center text-sm-center text-md-center text-lg-left text-xl-left">
+                            Brand Identity</p>
+                        <p class="cambay t18 text-center text-sm-center text-md-center text-lg-left text-xl-left">
+                            Claritas est etiam processus dynamicus, qui sequitur mutationem
                             consuetudium lectorum per seacula quarta decima.</p>
 
                     </div>
                 </div>
 
-                <div class="col-4 d-flex flew-row p-not-r">
-                    <img src="images/icon-2.png" alt="icon-services" width="60" heigh="60" class="icon-service mr-5">
-                    <div>
-                        <p class="montserrat text-bold t24">HTML Templates
+                <div
+                    class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 d-flex flex-column flex-sm-column flex-md-column flex-lg-row flex-xl-row  p-not-r">
+                    <img src="images/icon-2.png" alt="icon-services" width="60" heigh="60"
+                        class="align-self-center align-self-sm-center align-self-md-center align-self-lg-start align-self-xl-start icon-service mb-3 mb-sm-3 mb-md-3 mb-lg-0 mb-xl-0 mr-5">
+                    <div
+                        class="d-flex flex-column justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-start justify-content-xl-start align-items-center align-items-sm-center align-items-md-center align-items-xl-start align-items-xl-start">
+                        <p
+                            class="montserrat text-bold t24 text-center text-sm-center text-md-center text-lg-left text-xl-left">
+                            HTML Templates
                             & WordPress Themes</p>
-                        <p class="cambay t18">Qirum est notare quam littera gothica, quam nunc.</p>
+                        <p class="cambay t18 text-center text-sm-center text-md-center text-lg-left text-xl-left">Qirum
+                            est notare quam littera gothica, quam nunc.</p>
 
                     </div>
                 </div>
@@ -187,20 +206,33 @@
             </div>
         </div>
 
-        <div class="container reseaux-sociaux d-flex flex-row cambay mx-auto my-5 t20">
-            <!-- lien vers reseaux sociaux-->
-            <p class="mr-5">If you like my works Follow me:</p>
-            <div class="d-flex flex-row ml-5">
-                <i class="fab mx-4 fa-facebook-f"></i>
-                <i class="fab mx-4 fa-twitter"></i>
-                <i class="fab mx-4 fa-google-plus-g"></i>
-                <i class="fab mx-4 fa-linkedin-in"></i>
-                <i class="fab mx-4 fa-dribbble"></i>
-                <i class="fab mx-4 fa-behance"></i>
-                <i class="fab mx-4 fa-pinterest-p"></i>
-                <i class="fab mx-4 fa-instagram"></i>
-                <i class="fab mx-4 fa-tumblr"></i>
-                <i class="fab mx-4 fa-youtube"></i>
+
+
+
+
+
+
+        <div class="container p-about-reseaux reseaux-sociaux d-flex cambay t20">
+
+            <div
+                class="w-100 d-flex flex-column flex-sm-column flex-md-column flex-lg-row flex-xl-row justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-start justify-content-xl-start align-items-center align-items-sm-center align-items-md-center align-items-lg-start align-items-xl-start">
+                <!-- lien vers reseaux sociaux-->
+                <p class="mb-4 mb-sm-4 mb-md-4 mb-lg-0 mb-xl-0 mr-0 mr-sm-0 mr-md-0 mr-lg-5 mr-xl-5">If you like my
+                    works Follow me:</p>
+
+                <div class="d-flex flex-row ml-0 ml-sm-0 ml-md-0 ml-lg-5 ml-xl-5">
+                    <i class="fab mx-4 fa-facebook-f"></i>
+                    <i class="fab mx-4 fa-twitter"></i>
+                    <i class="fab mx-4 fa-google-plus-g"></i>
+                    <i class="fab mx-4 fa-linkedin-in"></i>
+                    <i class="fab mx-4 fa-dribbble"></i>
+                    <i class="fab mx-4 fa-behance"></i>
+                    <i class="fab mx-4 fa-pinterest-p"></i>
+                    <i class="fab mx-4 fa-instagram"></i>
+                    <i class="fab mx-4 fa-tumblr"></i>
+                    <i class="fab mx-4 fa-youtube"></i>
+                </div>
+
             </div>
         </div>
 
@@ -212,37 +244,45 @@
         <div class="container-fluid py-5">
             <div class="container py-5">
                 <h2 class="text-black-50 mt-5">Portfolio...</h2>
-                <div class="d-flex flex-row justify-content-between py-5">
-                    <p class="sous-titre">I Make Beautiful Things!</p>
+
+
+                <div
+                    class="d-flex flex-column flex-sm-column flex-md-column flex-lg-row flex-xl-row justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-between justify-content-xl-between align-items-center align-items-sm-center align-items-md-center align-items-lg-start align-items-xl-start py-5">
+                    <p
+                        class="sous-titre l-0 m-0 text-center text-sm-center text-md-center text-lg-left text-xl-left mb-4 mb-sm-4 mb-md-4 mb-lg-0 mb-xl-0">
+                        I Make Beautiful Things!</p>
                     <button type="button"
                         class="btn btn-default btn-rounded montserrat text-bold t14 text-uppercase">View
                         All Projects</button>
                 </div>
+
+
             </div>
         </div>
 
         <!-- masonry -->
 
-        <div class=" masonry">
+        <div class="masonry">
 
-            <div class="row">
-                <div class="col-6">
+            <div class="d-flex flex-column flex-sm-column flex-md-column flex-lg-row flex-xl-row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
                     <img src="images/masonry6.png" alt="masonry" width="960" height="480">
                     <div class="row">
-                        <div class="col-6">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
                             <img src="images/masonry1.png" alt="masonry" width="480" height="308">
                         </div>
-                        <div class="col-6">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
                             <img src="images/masonry2.png" alt="masonry" width="480" height="308">
                         </div>
                     </div>
                 </div>
 
-                <div class="col-6 row">
-                    <div class="col-6">
+                <div
+                    class="d-flex col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 flex-column flex-sm-column flex-md-column flex-lg-row flex-xl-row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
                         <img src="images/masonry4.png" alt="masonry" width="480" height="788">
                     </div>
-                    <div class="col-6">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
                         <img src="images/masonry3.png" alt="masonry" width=>
                         <img src="images/masonry5.png" alt="masonry" width="480" height="480">
                     </div>
@@ -253,8 +293,8 @@
     </section>
 
     <!------------ section client ------------>
-    <section id="clients" class="container-fluid py-0">
-        <div class="bg-intro w-100 h-100 py-5">
+    <section id="clients" class="container-fluid p-0">
+        <div class="bg-intro-client w-100 h-100 py-5">
             <div class="container my-5 py-5">
                 <h2 class="mt-5 py-5">Clients...</h2>
                 <p class="sous-titre">What Customers Say:</p>
@@ -266,8 +306,7 @@
                     <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active">
                             <div class="view">
-                                <p class="coustard t24">Investigationes demonstraverunt lectores legere me lius quod
-                                    ii
+                                <p class="coustard t24">Investigationes demonstraverunt lectores legere me lius quod ii
                                     <br>
                                     legunt saepius nunc putamus parum claram.</p>
 
@@ -283,8 +322,7 @@
                         <div class="carousel-item">
                             <!--Mask color-->
                             <div class="view">
-                                <p class="coustard t24">Investigationes demonstraverunt lectores legere me lius quod
-                                    ii
+                                <p class="coustard t24">Investigationes demonstraverunt lectores legere me lius quod ii
                                     <br>
                                     legunt saepius nunc putamus parum claram.</p>
 
@@ -300,8 +338,7 @@
                         <div class="carousel-item">
                             <!--Mask color-->
                             <div class="view">
-                                <p class="coustard t24">Investigationes demonstraverunt lectores legere me lius quod
-                                    ii
+                                <p class="coustard t24">Investigationes demonstraverunt lectores legere me lius quod ii
                                     <br>
                                     legunt saepius nunc putamus parum claram.</p>
 
@@ -327,7 +364,7 @@
                         <!--/.Controls-->
                     </div>
 
-                    <div class="row justify-content-between my-5 py-5">
+                    <div class="d-none d-sm-none d-md-none d-lg-flex d-xl-flex row justify-content-between my-5 py-5">
                         <img src="images/01.png" alt="logo-client-satisfait" width="200" height="121">
                         <img src="images/02.png" alt="logo-client-satisfait" width="200" height="200">
                         <img src="images/03.png" alt="logo-client-satisfait" width="200" height="123">
@@ -340,25 +377,30 @@
     <!------------ section blog ------------>
     <section id="blog" class="container-fluid">
         <div class="container py-5">
-            <h2 class=" pl-3 text-black-50">Blog...</h2> <!-- blog -->
-            <div class="p-0 m-0 d-flex">
-                <div class="col-6 p-3">
-                    <div class="px-0 py-5 mb-5">
-                        <p class="sous-titre">Do Not Miss the Userful Articles</p>
+            <!-- blog -->
+            <div class="p-0 m-0 d-flex flex-column flex-sm-column flex-md-column flex-lg-row flex-xl-row">
+
+
+                <div
+                    class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 p-3 d-flex flex-column justify-content-between">
+                    <div class="d-flex flex-column justify-content-between">
+                        <h2 class="p-0 m-0 text-black-50">Blog...</h2>
+                        <p class="sous-titre-1 p-20">Do Not Miss <br /> the Userful Articles</p>
                         <p class="cambay t24 text-black-50">Mirum est notare quam littera gothica, quam nunc parum
                             claram...</p>
                     </div>
 
 
-                    <div class="bg-primary text-center col-12 p-5 z-depth-2">
-                        <p class="montserrat t16 extra-bold text-white">6 october</p>
+
+                    <div class="bg-primary text-center p-blog z-depth-2">
+                        <p class="montserrat t16 extra-bold text-white t-john-miller">6 october</p>
                         <p class="coustard t26 text-white">“Eodem modo typi, qui nunc nobis videntur parum clari,
                             sollemnes parum”</p>
                         <p class="cambay text-bold t18 text-warning">Johnathan Miller</p>
 
                     </div>
                 </div>
-                <div class="col-6 carousel-blog p-3">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 carousel-blog w-100 p-3">
 
 
                     <!--Carousel Wrapper-->
@@ -378,21 +420,19 @@
                             <div class="carousel-item h-100 active">
                                 <p class="text-white-50 montserrat t20 extra-bold my-4">9 October</p>
                                 <p class="montserrat text-white t32 extra-bold my-4">Gallery Post Format</p>
-                                <p class="text-white cambay t18 my-4">Investigationes demonstraverunt lectores
-                                    legere me
+                                <p class="text-white cambay t18 my-4">Investigationes demonstraverunt lectores legere me
                                     lius quod ii legunt saepius. Claritas est etiam processus dynamicus.
                                 </p>
                                 <button type="button"
                                     class="btn btn-warning btn-rounded rounded-pill text-dark text-bold my-4 px-5 py-3"><b
-                                        class="t18 extra-bold">READ MORE</b></button>
+                                        class="t18 extra-bold">READ MORE</br></button>
                             </div>
                             <!--/First slide-->
                             <!--Second slide-->
                             <div class="carousel-item h-100">
                                 <p class="text-white-50 montserrat t20 extra-bold my-4">9 October</p>
                                 <p class="montserrat text-white t32 extra-bold my-4">Gallery Post Format</p>
-                                <p class="text-white cambay t18 my-4">Investigationes demonstraverunt lectores
-                                    legere me
+                                <p class="text-white cambay t18 my-4">Investigationes demonstraverunt lectores legere me
                                     lius quod ii legunt saepius. Claritas est etiam processus dynamicus.
                                 </p>
                                 <button type="button"
@@ -404,8 +444,7 @@
                             <div class="carousel-item h-100">
                                 <p class="text-white-50 montserrat t20 extra-bold my-4">9 October</p>
                                 <p class="montserrat text-white t32 extra-bold my-4">Gallery Post Format</p>
-                                <p class="text-white cambay t18 my-4">Investigationes demonstraverunt lectores
-                                    legere me
+                                <p class="text-white cambay t18 my-4">Investigationes demonstraverunt lectores legere me
                                     lius quod ii legunt saepius. Claritas est etiam processus dynamicus.
                                 </p>
                                 <button type="button"
@@ -423,16 +462,27 @@
                 </div>
             </div>
 
-            <div class="row w-100 p-3 justify-content-between m-0">
-                <div class="blog-bg-1 blog-bg z-depth-2"></div>
-                <div class="blog-bg-2 blog-bg z-depth-2"></div>
-                <div class="blog-bg-3 blog-bg d-flex flex-column justify-content-around p-5 z-depth-2">
-                    <p class="montserrat extra-bold t16 text-black-50">23 June</p>
-                    <p class="montserrat text-black t24">Standard Post Format without Preview Img</p>
-                    <p class="cambay t18">Qui nunc nobis videntur parum clari, sollemnes legere.</p>
+            <div class="row justify-content-around m-0">
+                <div
+                    class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 p-3 d-flex flex-row justify-content-between p-0">
+
+
+                    <div class="blog-w blog-bg-1 blog-bg z-depth-2"></div>
+                    <div class="blog-w blog-bg-2 blog-bg z-depth-2"></div>
+
                 </div>
-                <div class="blog-bg-4 blog-bg p-5 d-flex flex-column justify-content-center z-depth-2">
-                    <p class="montserrat text-bold t14 text-white text-center">VIEW ALL POST</p>
+
+                <div
+                    class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 p-3 d-flex flex-row justify-content-between p-0">
+
+                    <div class="blog-w blog-bg-3 blog-bg d-flex flex-column justify-content-around p-5 z-depth-2">
+                        <p class="montserrat extra-bold t16 text-black-50">23 June</p>
+                        <p class="montserrat text-black t24">Standard Post Format without Preview Img</p>
+                        <p class="cambay t18">Qui nunc nobis videntur parum clari, sollemnes legere.</p>
+                    </div>
+                    <div class="blog-w blog-bg-4 blog-bg p-5 d-flex flex-column justify-content-center z-depth-2">
+                        <p class="montserrat text-bold t14 text-white text-center">VIEW ALL POST</p>
+                    </div>
                 </div>
             </div>
 
@@ -440,74 +490,96 @@
     </section>
 
     <!------------ section contact ------------>
-    <section id="contacts" class="container-fluid p-0 position-relative">
-        <div class="bg-intro">
-            <div class="container absolute-center-50">
-                <h2 class="text-white mb-5">Contacts...</h2>
+    <section id="contacts" class="container-fluid p-0">
+
+        <div class="bg-intro-client">
+
+            <div class="container p-content-footer">
+
+                <h2 class="text-white ml-5 ml-sm-5 ml-md-5 ml-lg-0 ml-xl-0 mb-5">Contacts...</h2>
                 <div class="row">
-                    <div class="col-6">
+                    <div
+                        class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 d-flex flex-column justify-content-between align-items-center align-items-sm-center align-items-md-center align-items-lg-start align-items-xl-start text-white-50 cambay t20">
                         <!-- contact information -->
-                        <p class="sous-titre text-white">Contact Information</p>
-                        <div class="text-white-50 cambay t20">
-                            <p>You can find me here: <br>
-                                <span class="text-white">795 South Park Avenue, Melbourne, Australia </span></p>
 
-                            <p>Phone: <span class="text-white">8 800 567.890.11</span> </p>
+                        <p
+                            class="text-center text-sm-center text-md-center text-lg-left text-xl-left sous-titre text-white">
+                            Contact Information</p>
 
-                            <p>Monday 1 Friday from: <span class="text-white">9.00 am to 8.00 pm EST</span> <br>
-                                Saturday from <span class="text-white">10.00 am to pm EST</span></p>
+                        <p class="text-center text-sm-center text-md-center text-lg-left text-xl-left ">You can find me
+                            here: <br>
+                            <span class="text-white">795 South Park Avenue, Melbourne, Australia </span></p>
 
-                            <p class="text-primary">
-                                <a class="text-primary" href="mailto:#">hello@albedo.com</a> <br>
-                                <a class="text-primary" href="mailto:#">support@albedo.com</a>
-                            </p>
+                        <p class="text-center text-sm-center text-md-center text-lg-left text-xl-left ">Phone: <span
+                                class="text-white">8 800 567.890.11</span> </p>
 
-                            <p class="reseaux-sociaux">
-                                <i class="fab mx-4 fa-facebook-f"></i>
-                                <i class="fab mx-4 fa-twitter"></i>
-                                <i class="fab mx-4 fa-google-plus-g"></i>
-                                <i class="fab mx-4 fa-linkedin-in"></i>
-                            </p>
-                        </div>
+                        <p class="text-center text-sm-center text-md-center text-lg-left text-xl-left ">Monday 1 Friday
+                            from: <span class="text-white">9.00 am to 8.00 pm EST</span> <br>
+                            Saturday from <span class="text-white">10.00 am to pm EST</span></p>
+
+                        <p class="text-center text-sm-center text-md-center text-lg-left text-xl-left text-primary">
+                            <a class="text-primary" href="mailto:#">hello@albedo.com</a> <br>
+                            <a class="text-primary" href="mailto:#">support@albedo.com</a>
+                        </p>
+
+                        <p class="reseaux-sociaux">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab m-contact fa-twitter"></i>
+                            <i class="fab m-contact fa-google-plus-g"></i>
+                            <i class="fab m-contact fa-linkedin-in"></i>
+                        </p>
+
                     </div>
 
-                    <div class="col-6">
-                        <p class="sous-titre text-white">Get In touch</p>
-                        <p class="text-white-50 cambay t20"> You can contact with me using this from.</p>
+                    <div
+                        class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 d-flex flex-column justify-content-between">
+                        <p
+                            class="text-center text-sm-center text-md-center text-lg-left text-xl-left sous-titre text-white p-contact-mail">
+                            Get In touch</p>
+                        <p
+                            class="text-white-50 text-center text-sm-center text-md-center text-lg-left text-xl-left cambay t20">
+                            You can contact with me using this from.</p>
 
                         <form class="w-100" action="#" method="POST">
-                            <div class="row justify-content-between m-0 w-100">
-                                <div class="w-45 p-0">
-                                    <input class="rounded-pill elegant-color text-white-50 my-4 w-100" type="text">
+                            <div
+                                class="row flex-column justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-between justify-content-xl-between align-items-center align-items-sm-center align-items-md-center align-items-lg-start align-items-xl-start m-0 w-100">
+                                <div
+                                    class="d-flex flex-column flex-sm-column flex-md-column flex-lg-row flex-xl-row justify-content-between w-text-area">
+                                    <div class="w-input-contact p-0">
+                                        <input class="rounded-pill elegant-color text-white-50 my-4 w-100" type="text">
+                                    </div>
+                                    <div class="w-input-contact p-0">
+                                        <input class="rounded-pill elegant-color text-white-50 my-4 w-100" type="mail">
+                                    </div>
                                 </div>
-                                <div class="w-45 p-0">
-                                    <input class="rounded-pill elegant-color text-white-50 my-4 w-100" type="mail">
-                                </div>
+                                <textarea class="w-text-area elegant-color text-white-50 my-4" name="" id=""
+                                    rows="7"></textarea><br>
+                                <button
+                                    class="w-button btn btn-send t14 text-nowrap montserrat btn-primary rounded-pill text-bold">SEND</button>
                             </div>
-                            <textarea class="col-12 elegant-color text-white-50 my-4" name="" id=""
-                                rows="7"></textarea><br>
-                            <button
-                                class="btn btn-send t14  montserrat btn-primary rounded-pill text-bold">SEND</button>
                         </form>
 
                     </div> <!-- get it touch -->
                 </div>
             </div>
 
-            <footer class="container-fluid bg-footer absolute-end p-5">
-                <div class="container d-flex flex-row p-3 justify-content-between">
-                    <div>
-                        <!-- copyright-->
-                        <p class="cambay text-bold t14 m-0 text-white-50">
-                            © 2016 <span class="text-white">Albedo</span> — Universal WordPress Theme. Developed by
-                            <span class="text-white">WPlab.Pro.</span> Design by themefire.
-                        </p>
+            <footer class="container-fluid p-0 bg-footer">
+                <div class="bg-intro-client">
+                    <div
+                        class="container p-footer-contact d-flex flex-column flex-sm-column flex-md-column flex-lg-row flex-xl-row align-items-center align-items-sm-center align-items-md-center align-items-lg-start align-items-start p-footer justify-content-between">
+                        <div>
+                            <!-- copyright-->
+                            <p
+                                class="cambay text-center text-sm-center text-md-center text-lg-left text-xl-left text-bold t14 m-0 text-white-50">
+                                © 2016 <span class="text-white">Albedo</span> — Universal WordPress Theme. Developed by
+                                <span class="text-white">WPlab.Pro.</span> Design by themefire.
+                            </p>
+                        </div>
+                        <div>
+                            <!-- back to top -->
+                            <a href="#intro">Back to top <i class="far fa-arrow-alt-circle-up"></i></a>
+                        </div>
                     </div>
-                    <div>
-                        <!-- back to top -->
-                        <a href="#intro">Back to top <i class="far fa-arrow-alt-circle-up"></i></a>
-                    </div>
-                </div>
             </footer>
         </div>
     </section>
@@ -523,12 +595,13 @@
             $("#closeBurger").click(function () {
                 $('#menu-burger').animate({ height: '0vh' }, 1000);
             });
-
+            $(".lien-burger").click(function () {
+                $('#menu-burger').animate({ height: '0vh' }, 1000);
+            });
 
         });
 
     </script>
-
 
 </body>
 
