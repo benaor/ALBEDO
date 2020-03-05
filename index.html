@@ -33,39 +33,48 @@
 
 <body>
 
-    <div class="w-100 position-fixed px-5 bg-dark" id="menu-burger">
+        <div class="w-100 position-fixed bg-dark" id="menu-burger">
 
-        <div class="d-flex container flex-row py-5 justify-content-between">
-            <a href="index.html">
-                <div class="d-flex flex-row">
-                    <!-- titre et logo -->
-                    <img src="images/logotype.png" alt="logoAlbedo" class="logoAlbedo mx-1" width="46" height="55">
-                    <h1 class="m-1">albedo</h1>
+            <div class="container-fluid pr-header">
+
+                <div class="d-flex container flex-row py-5 justify-content-between align-items-center">
+        <a href=" index.html">
+                    <div class="d-flex flex-row titreAlbedo">
+                        <!-- titre et logo -->
+                        <img src="images/logotype.png" alt="logoAlbedo" class="logoAlbedo mx-1" width="46" height="55">
+                        <h1 class="m-1">albedo</h1>
+                    </div>
+                    </a>
+
+                    <div id="closeBurger">
+                        <i class="fas fa-5x fa-times"></i>
+                    </div>
                 </div>
-            </a>
 
-            <div id="closeBurger">
-                <i class="fas fa-5x fa-times"></i>
+
+
+
+                <nav class="center-absolute">
+                    <!-- menu nav -->
+                    <ul class="list-unstyled">
+                        <li class="montserrat t24 text-bold mt-5"><a class="lien-burger" href="#intro">Intro</a></li>
+                        <li class="montserrat t24 text-bold mt-5"><a class="lien-burger" href="#aboutMe">About Me</a>
+                        </li>
+                        <li class="montserrat t24 text-bold mt-5"><a class="lien-burger" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="montserrat t24 text-bold mt-5"><a class="lien-burger" href="#clients">Clients</a>
+                        </li>
+                        <li class="montserrat t24 text-bold mt-5"><a class="lien-burger" href="#blog">Blog</a></li>
+                        <li class="montserrat t24 text-bold mt-5"><a class="lien-burger" href="#contacts">Contacts</a>
+                        </li>
+                        <!-- acheter template-->
+                        <li class="mt-5"><a href="#" class="btn-buy font-weight-bold">BUY IT NOW</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
-
-
-        <nav class="center-absolute">
-            <!-- menu nav -->
-            <ul class="list-unstyled">
-                <li class="montserrat t24 text-bold mt-5"><a class="lien-burger" href="#intro">Intro</a></li>
-                <li class="montserrat t24 text-bold mt-5"><a class="lien-burger" href="#aboutMe">About Me</a></li>
-                <li class="montserrat t24 text-bold mt-5"><a class="lien-burger" href="#portfolio">Portfolio</a></li>
-                <li class="montserrat t24 text-bold mt-5"><a class="lien-burger" href="#clients">Clients</a></li>
-                <li class="montserrat t24 text-bold mt-5"><a class="lien-burger" href="#blog">Blog</a></li>
-                <li class="montserrat t24 text-bold mt-5"><a class="lien-burger" href="#contacts">Contacts</a></li>
-                <!-- acheter template-->
-                <li class="mt-5"><a href="#" class="btn-buy font-weight-bold">BUY IT NOW</a></li>
-            </ul>
-        </nav>
-    </div>
     <!------------ section introduction ------------>
-    <section id="intro" class=" p-0 container-fluid text-white">
+    <section id="intro" class="text-white">
         <div class="bg-intro w-100 h-100">
             <header class="container-fluid">
                 <div class="d-flex container flex-row py-5 justify-content-between align-items-center">
@@ -77,9 +86,10 @@
                             <h1 class="m-1">albedo</h1>
                         </div>
                     </a>
-                    <nav class="d-none d-sm-none d-md-none d-lg-block d-xl-block">
+                    <nav>
                         <!-- menu nav -->
-                        <ul class="d-none d-sm-none d-md-none d-lg-flex d-xl-flex text-nowrap m-0 flex-row list-unstyled ">
+                        <ul
+                            class="d-none d-sm-none d-md-none d-lg-flex d-xl-flex text-nowrap m-0 flex-row list-unstyled ">
                             <li><a href="#intro">Intro</a></li>
                             <li><a href="#aboutMe">About Me</a></li>
                             <li><a href="#portfolio">Portfolio</a></li>
@@ -546,13 +556,13 @@
                                 <div
                                     class="d-flex flex-column flex-sm-column flex-md-column flex-lg-row flex-xl-row justify-content-between w-text-area">
                                     <div class="w-input-contact p-0">
-                                        <input class="rounded-pill elegant-color text-white-50 my-4 w-100" type="text">
+                                        <input class="rounded-pill elegant-color text-white-50 my-4 w-100" required type="text">
                                     </div>
                                     <div class="w-input-contact p-0">
-                                        <input class="rounded-pill elegant-color text-white-50 my-4 w-100" type="mail">
+                                        <input class="rounded-pill elegant-color text-white-50 my-4 w-100" required type="mail">
                                     </div>
                                 </div>
-                                <textarea class="w-text-area elegant-color text-white-50 my-4" name="" id=""
+                                <textarea class="w-text-area elegant-color text-white-50 my-4" required name="" id=""
                                     rows="7"></textarea><br>
                                 <button
                                     class="w-button btn btn-send t14 text-nowrap montserrat btn-primary rounded-pill text-bold">SEND</button>

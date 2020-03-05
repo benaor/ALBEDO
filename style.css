@@ -72,7 +72,6 @@ a:hover{
     white-space: nowrap;
 }
 
-
 .wrap{
     white-space: normal;
 }
@@ -366,6 +365,7 @@ nav ul li{
     font-size: 1.8rem !important;
 }
 
+
 .p-content-footer
 {
     padding: 10rem 0;
@@ -416,6 +416,9 @@ nav ul li{
             .w-button{
                 width: 75%;
             }
+            .pr-header{
+                padding-right: 30px;
+            }
         }
 
         @media screen and (max-width: 430px){
@@ -426,5 +429,18 @@ nav ul li{
         @media screen and (max-width: 350px){
             html{
                 font-size: 25% !important;
+            }
+        }
+        @media screen and (min-width: 700px){
+
+            .st1{
+                display: block;
+            }
+        }
+        @media screen and (max-width: 700px){
+
+            .st1{
+                display: flex;
+                flex-direction: column;
             }
         }
