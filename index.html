@@ -3,7 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Albedo">
+    <meta name="description"
+        content="Hi there! My name is Daniel, I'm graphic Designer">
     <link
         href="https://fonts.googleapis.com/css?family=Cambay|Coustard|Leckerli+One|Montserrat:700|Work+Sans&display=swap"
         rel="stylesheet">
@@ -17,63 +21,64 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.13.0/css/mdb.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <!-- JQuery -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- Bootstrap tooltips -->
-    <script type="text/javascript"
+    <script
         src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
     <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript"
+    <script
         src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
-    <script type="text/javascript"
+    <script
         src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.0/js/mdb.min.js"></script>
+        
 
     <title>Albedo</title>
 </head>
 
 <body>
 
-        <div class="w-100 position-fixed bg-dark" id="menu-burger">
+    <section class="w-100 position-fixed bg-dark" id="menu-burger">
 
-            <div class="container-fluid pr-header">
+        <div class="container-fluid pr-header">
 
-                <div class="d-flex container flex-row py-5 justify-content-between align-items-center">
-        <a href=" index.html">
+            <div class="d-flex container flex-row py-5 justify-content-between align-items-center">
+                <a href=" index.html">
                     <div class="d-flex flex-row titreAlbedo">
                         <!-- titre et logo -->
                         <img src="images/logotype.png" alt="logoAlbedo" class="logoAlbedo mx-1" width="46" height="55">
                         <h1 class="m-1">albedo</h1>
                     </div>
-                    </a>
+                </a>
 
-                    <div id="closeBurger">
-                        <i class="fas fa-5x fa-times"></i>
-                    </div>
+                <div id="closeBurger">
+                    <i class="fas fa-5x fa-times"></i>
                 </div>
-
-
-
-
-                <nav class="center-absolute">
-                    <!-- menu nav -->
-                    <ul class="list-unstyled">
-                        <li class="montserrat t24 text-bold mt-5"><a class="lien-burger" href="#intro">Intro</a></li>
-                        <li class="montserrat t24 text-bold mt-5"><a class="lien-burger" href="#aboutMe">About Me</a>
-                        </li>
-                        <li class="montserrat t24 text-bold mt-5"><a class="lien-burger" href="#portfolio">Portfolio</a>
-                        </li>
-                        <li class="montserrat t24 text-bold mt-5"><a class="lien-burger" href="#clients">Clients</a>
-                        </li>
-                        <li class="montserrat t24 text-bold mt-5"><a class="lien-burger" href="#blog">Blog</a></li>
-                        <li class="montserrat t24 text-bold mt-5"><a class="lien-burger" href="#contacts">Contacts</a>
-                        </li>
-                        <!-- acheter template-->
-                        <li class="mt-5"><a href="#" class="btn-buy font-weight-bold">BUY IT NOW</a></li>
-                    </ul>
-                </nav>
             </div>
+
+
+
+
+            <nav class="center-absolute">
+                <!-- menu nav -->
+                <ul class="list-unstyled">
+                    <li class="montserrat t24 text-bold mt-5"><a class="lien-burger" href="#intro">Intro</a></li>
+                    <li class="montserrat t24 text-bold mt-5"><a class="lien-burger" href="#aboutMe">About Me</a>
+                    </li>
+                    <li class="montserrat t24 text-bold mt-5"><a class="lien-burger" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="montserrat t24 text-bold mt-5"><a class="lien-burger" href="#clients">Clients</a>
+                    </li>
+                    <li class="montserrat t24 text-bold mt-5"><a class="lien-burger" href="#blog">Blog</a></li>
+                    <li class="montserrat t24 text-bold mt-5"><a class="lien-burger" href="#contacts">Contacts</a>
+                    </li>
+                    <!-- acheter template-->
+                    <li class="mt-5"><a href="#" class="btn-buy font-weight-bold">BUY IT NOW</a></li>
+                </ul>
+            </nav>
         </div>
-    <!------------ section introduction ------------>
+    </section>
+    <!--========== section introduction ==========-->
     <section id="intro" class="text-white">
         <div class="bg-intro w-100 h-100">
             <header class="container-fluid">
@@ -121,9 +126,8 @@
                         lectorum parum, anteposuerit etiam processus dynamicus. </p>
 
                     <div>
-                        <button type="button" class="btn btn-intro rounded-pill"> <a class="text-bold t14 montserrat"
-                                href="#aboutMe">ABOUT ME</a>
-                        </button>
+                        <a href="#aboutMe" class="btn btn-intro rounded-pill text-bold t14 montserrat">ABOUT ME</a>
+
                     </div>
                 </div>
 
@@ -131,7 +135,7 @@
         </div>
     </section>
 
-    <!------------ section about Me ------------>
+    <!--========== section about Me ==========-->
     <section id="aboutMe" class="container-fluid text-white px-0 d-flex flex-column">
 
         <div class="container p-about-me">
@@ -166,7 +170,7 @@
 
                 <div
                     class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 d-flex flex-column flex-sm-column flex-md-column flex-lg-row flex-xl-row  p-not-l">
-                    <img src="images/icon.png" alt="icon-services" width="60" heigh="60"
+                    <img src="images/icon.png" alt="icon-services" width="60" height="60"
                         class="align-self-center align-self-sm-center align-self-md-center align-self-lg-start align-self-xl-start icon-service mb-3 mb-sm-3 mb-md-3 mb-lg-0 mb-xl-0 mr-0 mr-sm-0 mr-md-0 mr-lg-5 mr-xl-5">
                     <div
                         class="d-flex flex-column justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-start justify-content-xl-start align-items-center align-items-sm-center align-items-md-center align-items-lg-start align-items-xl-start">
@@ -183,7 +187,7 @@
 
                 <div
                     class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 d-flex flex-column flex-sm-column flex-md-column flex-lg-row flex-xl-row  p-5 ">
-                    <img src="images/icon-1.png" alt="icon-services" width="60" heigh="60"
+                    <img src="images/icon-1.png" alt="icon-services" width="60" height="60"
                         class="align-self-center align-self-sm-center align-self-md-center align-self-lg-start align-self-xl-start icon-service mb-3 mb-sm-3 mb-md-3 mb-lg-0 mb-xl-0 mr-5">
                     <div
                         class="d-flex flex-column justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-start justify-content-xl-start align-items-center align-items-sm-center align-items-md-center align-items-xl-start align-items-xl-start">
@@ -199,7 +203,7 @@
 
                 <div
                     class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 d-flex flex-column flex-sm-column flex-md-column flex-lg-row flex-xl-row  p-not-r">
-                    <img src="images/icon-2.png" alt="icon-services" width="60" heigh="60"
+                    <img src="images/icon-2.png" alt="icon-services" width="60" height="60"
                         class="align-self-center align-self-sm-center align-self-md-center align-self-lg-start align-self-xl-start icon-service mb-3 mb-sm-3 mb-md-3 mb-lg-0 mb-xl-0 mr-5">
                     <div
                         class="d-flex flex-column justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-start justify-content-xl-start align-items-center align-items-sm-center align-items-md-center align-items-xl-start align-items-xl-start">
@@ -248,7 +252,7 @@
 
     </section>
 
-    <!------------ section portfolio ------------>
+    <!-- ========== section portfolio ========== -->
     <section id="portfolio">
 
         <div class="container-fluid py-5">
@@ -293,7 +297,7 @@
                         <img src="images/masonry4.png" alt="masonry" width="480" height="788">
                     </div>
                     <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                        <img src="images/masonry3.png" alt="masonry" width=>
+                        <img src="images/masonry3.png" alt="masonry">
                         <img src="images/masonry5.png" alt="masonry" width="480" height="480">
                     </div>
                 </div>
@@ -302,7 +306,7 @@
 
     </section>
 
-    <!------------ section client ------------>
+    <!-- ==========  section client  ========== -->
     <section id="clients" class="container-fluid p-0">
         <div class="bg-intro-client w-100 h-100 py-5">
             <div class="container my-5 py-5">
@@ -382,9 +386,10 @@
                     </div> <!-- 4 logo de clients-->
                 </div>
             </div>
+        </div>
     </section>
 
-    <!------------ section blog ------------>
+    <!-- ==========  section blog ========== -->
     <section id="blog" class="container-fluid">
         <div class="container py-5">
             <!-- blog -->
@@ -434,8 +439,8 @@
                                     lius quod ii legunt saepius. Claritas est etiam processus dynamicus.
                                 </p>
                                 <button type="button"
-                                    class="btn btn-warning btn-rounded rounded-pill text-dark text-bold my-4 px-5 py-3"><b
-                                        class="t18 extra-bold">READ MORE</br></button>
+                                    class="btn btn-warning btn-rounded rounded-pill t18 extra-bold text-dark text-bold my-4 px-5 py-3">
+                                    READ MORE </button>
                             </div>
                             <!--/First slide-->
                             <!--Second slide-->
@@ -499,7 +504,7 @@
         </div>
     </section>
 
-    <!------------ section contact ------------>
+    <!-- ==========  section contact ========== -->
     <section id="contacts" class="container-fluid p-0">
 
         <div class="bg-intro-client">
@@ -556,14 +561,16 @@
                                 <div
                                     class="d-flex flex-column flex-sm-column flex-md-column flex-lg-row flex-xl-row justify-content-between w-text-area">
                                     <div class="w-input-contact p-0">
-                                        <input class="rounded-pill elegant-color text-white-50 my-4 w-100" required type="text">
+                                        <input type="text" class="rounded-pill elegant-color text-white-50 my-4 w-100"
+                                            required>
                                     </div>
                                     <div class="w-input-contact p-0">
-                                        <input class="rounded-pill elegant-color text-white-50 my-4 w-100" required type="mail">
+                                        <input type="email" class="rounded-pill elegant-color text-white-50 my-4 w-100"
+                                            required>
                                     </div>
                                 </div>
-                                <textarea class="w-text-area elegant-color text-white-50 my-4" required name="" id=""
-                                    rows="7"></textarea><br>
+                                <textarea class="w-text-area elegant-color text-white-50 my-4" required
+                                    name="commentaire" id="commentaire" rows="7"></textarea><br>
                                 <button
                                     class="w-button btn btn-send t14 text-nowrap montserrat btn-primary rounded-pill text-bold">SEND</button>
                             </div>
@@ -590,6 +597,7 @@
                             <a href="#intro">Back to top <i class="far fa-arrow-alt-circle-up"></i></a>
                         </div>
                     </div>
+                </div>
             </footer>
         </div>
     </section>

@@ -101,7 +101,7 @@ a:hover{
 }
 
 .t16{
-    font-style: 1.6rem;
+    font-size: 1.6rem;
 }
 
 .t14{
@@ -125,7 +125,7 @@ a:hover{
 }
 /* ---------- section introduction ----------*/
 #intro {
-    background: url('images/Clip.png');
+    background: url('images/Clip.jpg');
     background-size: cover;
 }
 
@@ -212,7 +212,7 @@ nav ul li{
 
 /* ---------- section client ---------- */
 #clients{
-    background: url('images/photo-4.png');
+    background: url('images/photo-4.jpg');
     background-size: cover;
     color: white;
 }
@@ -272,7 +272,7 @@ nav ul li{
 }
 /* ---------- section contacts ---------- */
 #contacts{
-    background: url('images/photo.png');
+    background: url('images/photo.jpg');
     background-size: cover;
 }
 
